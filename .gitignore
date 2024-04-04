@@ -1,0 +1,9 @@
+resume.txt
+.env
+.venv
+__pycache__
+.vscode
+.idea
+.dockerignore
+Dockerfile
+docker-compose.yml

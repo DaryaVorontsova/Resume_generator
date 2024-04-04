@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="location">
+        <div class="personal_data">
+            <img src="{{avatar_url}}" alt=""> 
+            <div class="name_last_name">
+                <div class="fio">
+                    <h1>{{name_person}}</h1> 
+                    <h1>{{surname_person}} </h1> 
+                </div>
+                <h2 style="margin: 0; color: #757969">Обо мне</h2>
+                <b style="color: white">Дата рождения:</b> {{birthday_person}} 
+                <b style="color: white">Город:</b> {{city_person}}
+            </div>
+        </div>
+        <div class="work_experience">
+            <div class="title">
+                <h3>Опыт работы:</h3>
+            </div>
+            {% for repos in my_repositories %}
+            <b><i>Название:</i> {{ repos.name }}</b><br>
+            <span><i>Наиболее используемый язык:</i> {{repos.language }}</span><br>
+            <span><i>Описание: </i>{{ repos.description}}</span><br><br>
+            {% endfor %}
+            <div class="link_git">
+                <h3>Ссылка на Github:</h3>
+                <a style="color: #636659" href="{{link_github}}">{{link_github}}</a>
+            </div>
+        </div>
+        <div class="contact_data">
+            <h3 style="color: #757969; margin: 0">Ссылка на VK:</h3>
+            <a style="color: #636659" href="https://vk.com/{{vk_id_person}}">@{{vk_id_person}}</a><br>    
+        </div>
+        <div class="datetime_class">
+            <b><i>Дата создания: </i>{{datetime.now()}}</b>
+        </div>
+    </div>
+</body>
+</html>

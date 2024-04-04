@@ -1,0 +1,104 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.location{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 650px;
+    transition: background-color 0.5s;
+}
+
+.personal_data{
+    display: flex;
+    flex-direction: row; 
+    background: #B2B6A4;
+    padding: 15px 55px;
+}
+
+.personal_data img{
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.personal_data h1{
+    margin: 0;
+}
+
+
+.name_last_name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.fio{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: #FFFFFF;
+}
+
+.work_experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FCF9F4;
+    padding: 15px;
+}
+.work_experience h3{
+    margin: 0;
+    margin-bottom: 2px;
+    padding-left: 50px;
+    color: #757969;
+}
+
+.contact_data{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px 0px;
+    width: 100%;
+    background: #EBEDE5;
+    gap: 10px;
+}
+
+.title{
+    width: 100%;
+    border-bottom: 1px solid #DBD5CB;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    color: #757969;
+}
+
+.link_git{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-start;
+    border-top: 1px solid #DBD5CB;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-top: 4px;
+}
+
+i{
+    font-style: italic
+}
+
+.datetime_class{
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+    background: #FCF9F4
+}
